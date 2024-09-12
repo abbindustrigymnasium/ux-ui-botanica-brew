@@ -1,10 +1,53 @@
 <script lang="ts">
-    // Fetch data from db
-    export let data;
+	import Cake from '$lib/components/Cake.svelte';
+	// Fetch data from db
+	export let data;
 
-    // Example: access price of cakeId = 0
-    console.log(data.cakes[0].price);
+	// Example: access price of cakeId = 0
+	console.log(data.cakes[0].price);
 </script>
 
-<h1>CAKES</h1>
-<p>{JSON.stringify(data.cakes)}</p>
+<div class="wrapper">
+	<h1 class="header">Menu</h1>
+	<div class="cakes">
+		{#each data.cakes as cake}
+			<a class="cake-wrapper" href={`/products/${cake.id}`}>
+				<Cake price={cake.price} name={cake.title} />
+			</a>
+		{/each}
+	</div>
+</div>
+
+<style>
+	.wrapper {
+		display: flex;
+		align-items: center;
+		height: 100vh;
+		background-color: #a3b396;
+		flex-direction: column;
+	}
+
+	.header {
+		margin-top: 80px;
+		font-size: 40px;
+	}
+
+    .cakes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+        margin-top: 48px;
+    }
+
+	.cake-wrapper {
+		z-index: 5;
+	}
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+</style>
