@@ -40,5 +40,5 @@ Vi valde att licensiera projektet under **GNU General Public License (GPL)** eft
 
 4. **Främjar samarbete**: Genom att säkerställa att mjukvaran och alla härledda verk förblir fria, uppmuntrar GPL mer samarbete och innovation inom gemenskapen. Utvecklare kan bygga vidare på varandras arbete, vilket påskyndar utvecklingen av mjukvaran.
 
-# 7 Övrigt
+# 7. Övrigt
 Designen är inte fullständigt implementerad på grund av tidsbrist. Stilarna på hemsidan fungerar bäst om man kör på en iPhone 14 Pro Max, vilket man kan konfigurera i devtools, t.ex. i Firefox eller Chrome. Vi ansåg att det inte var en prioritet att anpassa stilarna för desktop-läge, eftersom de flesta botanister oftast inte har tillgång till sin dator när de är ute i trädgården och arbetar.
