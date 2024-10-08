@@ -25,7 +25,7 @@ För närvarande finns det inga planer på att fortsätta utveckla projektet eft
 # 5. Mjukvara
 För att bygga projektet valde vi att använda **SvelteKit** tillsammans med **TypeScript**. Dessa verktyg valdes på grund av deras stöd för server-side rendering, flexibilitet och stöd för moderna utvecklingsmönster.
 
-## Licens: Varför GNU General Public License (GPL)?
+# 6. Licens
 
 Vi valde att licensiera projektet under **GNU General Public License (GPL)** eftersom det säkerställer att koden förblir fri och öppen för alla.
 
