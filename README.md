@@ -5,9 +5,12 @@ Projektet är en modern webbapplikation byggd med fokus på UI/UX. Applikationen
 För att köra projektet krävs att du har **Node.js** och **TypeScript** installerat. Dessa teknologier används för att kompilera och köra applikationen.  
 För att installera och starta projektet, följ dessa steg:
 
-1. Klona projektet.
-2. Navigera till projektets rotmapp.
-3. Kör följande kommandon:
+1. Klona Jetons json-db projekt.
+2. Följ instruktionerna och starta api-servern.
+
+3. Klona projektet.
+4. Navigera till projektets rotmapp.
+5. Kör följande kommandon:
 
    ```bash
    npm i
@@ -17,7 +20,7 @@ För att installera och starta projektet, följ dessa steg:
 Detta installerar alla nödvändiga bibliotek och startar en utvecklingsserver för att kunna testa och arbeta med applikationen lokalt.
 
 # 3. Kända buggar
-Det finns inga kända buggar. Designen är inte fullständigt implementerad pga. tidsbrist.
+Det finns inga kända buggar.
 
 # 4. Framtida utveckling/status
 För närvarande finns det inga planer på att fortsätta utveckla projektet efter slutförandet. Vi har uppnått de mål vi satte upp från början.
@@ -36,3 +39,6 @@ Vi valde att licensiera projektet under **GNU General Public License (GPL)** eft
 3. **Förhindrar proprietär inlåsning**: GPL förhindrar att projektet tas över och omvandlas till proprietär mjukvara. Alla förbättringar måste göras tillgängliga för allmänheten under samma licens, vilket säkerställer att projektets öppenhet bevaras.
 
 4. **Främjar samarbete**: Genom att säkerställa att mjukvaran och alla härledda verk förblir fria, uppmuntrar GPL mer samarbete och innovation inom gemenskapen. Utvecklare kan bygga vidare på varandras arbete, vilket påskyndar utvecklingen av mjukvaran.
+
+# 7 Övrigt.
+Designen är inte fullständigt implementerad på grund av tidsbrist. Stilarna på hemsidan fungerar bäst om man kör på en iPhone 14 Pro Max, vilket man kan konfigurera i devtools, t.ex. i Firefox eller Chrome. Vi ansåg att det inte var en prioritet att anpassa stilarna för desktop-läge, eftersom de flesta botanister oftast inte har tillgång till sin dator när de är ute i trädgården och arbetar.
