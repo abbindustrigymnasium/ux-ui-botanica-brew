@@ -15,7 +15,7 @@
 	let loggedIn: boolean = false;
 
 	session.subscribe((cur: any) => {
-		loading = cur?.loading ?? true; // Ensure loading is true by default
+		loading = cur?.loading ?? true;
 		loggedIn = cur?.loggedIn;
 	});
 

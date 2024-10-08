@@ -1,11 +1,4 @@
-<script lang="ts">
-	import Navigation from '$lib/components/NavigationLink.svelte';
-</script>
-
 <div class="top">
-	<!-- <div class="nav__wrapper">
-		<Navigation />
-	</div> -->
 	<img src="/landingBackground.png" alt="" class="background__image" />
 	<header class="title">Botanica Brew</header>
 	<div class="description">
@@ -101,8 +94,5 @@
 			width: 330px;
 			text-align: center;
 		}
-	}
-	.nav__wrapper {
-		z-index: 1;
 	}
 </style>
