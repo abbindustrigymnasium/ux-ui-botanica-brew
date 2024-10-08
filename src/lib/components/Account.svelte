@@ -3,6 +3,7 @@
 	import { goto } from '$app/navigation';
 	import { signOut } from 'firebase/auth';
 	import { auth } from '$lib/firebase/init';
+	import LoginWrapper from './LoginWrapper.svelte';
 
 	type User = {
 		email?: string | null;
@@ -44,5 +45,5 @@
 		<button on:click={handleSignOut}>Sign out</button>
 	</div>
 {:else}
-	<div>You are not logged in</div>
+	<LoginWrapper />
 {/if}

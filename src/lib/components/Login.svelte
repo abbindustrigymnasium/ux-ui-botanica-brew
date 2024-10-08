@@ -1,13 +1,10 @@
 <script lang="ts">
 	import { auth } from '$lib/firebase/init';
-	import {
-		GoogleAuthProvider,
-		signInWithEmailAndPassword,
-		signInWithPopup
-	} from 'firebase/auth';
+	import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 	import { goto } from '$app/navigation';
 	import { session } from '$lib/stores/session';
 
+	export let switchMethod;
 	let email: string = '';
 	let password: string = '';
 
@@ -15,7 +12,7 @@
 
 	async function handleLogin() {
 		await signInWithEmailAndPassword(auth, email, password)
-        // set session state
+			// set session state
 			.then((result) => {
 				const { user } = result;
 				session.update((cur: any) => {
@@ -35,7 +32,7 @@
 
 	async function handleGoogleSignIn() {
 		await signInWithPopup(auth, provider)
-        // set session state
+			// set session state
 			.then((result) => {
 				const { user } = result;
 				session.update((cur: any) => {
@@ -62,4 +59,5 @@
 		<button type="submit">Log in</button>
 	</form>
 	<button on:click={handleGoogleSignIn}>Log in with google</button>
+	<button on:click={switchMethod}>Switch</button> 
 </div>

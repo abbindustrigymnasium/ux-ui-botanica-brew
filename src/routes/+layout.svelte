@@ -69,7 +69,10 @@
 				<NavigationLink href="/contact" text="Contact" />
 			</button>
 			<button class="link" on:click={toggleNav}>
-				<NavigationLink href="/cart" text="Cart" />\
+				<NavigationLink href="/cart" text="Cart" />
+			</button>
+			<button class="link" on:click={toggleNav}>
+				<NavigationLink href="/staff" text="Staff" />
 			</button>
 		</div>
 	</div>
@@ -135,7 +138,7 @@
 	}
 
 	.link {
-		margin: 28px;
+		margin: 20px;
 	}
 
 	.loading {

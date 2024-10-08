@@ -8,6 +8,8 @@
 	import { goto } from '$app/navigation';
 	import { session } from '$lib/stores/session';
 
+	export let switchMethod;
+
 	let email: string = '';
 	let password: string = '';
 
@@ -62,4 +64,5 @@
 		<button type="submit" on:click={handleRegister}>Register</button>
 	</form>
 	<button on:click={handleGoogleSignIn}>Sign in with google</button>
+	<button on:click={switchMethod}>Switch</button>
 </div>
