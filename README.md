@@ -5,7 +5,7 @@ Projektet är en modern webbapplikation byggd med fokus på UI/UX. Applikationen
 För att köra projektet krävs att du har **Node.js** och **TypeScript** installerat. Dessa teknologier används för att kompilera och köra applikationen.  
 För att installera och starta projektet, följ dessa steg:
 
-1. Klona Jetons json-db projekt.
+1. Klona [Jetons json-db projekt.](https://github.com/abbjetmus/ui-ux-bakery-project)
 2. Följ instruktionerna och starta api-servern.
 
 3. Klona projektet.
